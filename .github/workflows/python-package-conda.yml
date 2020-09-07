@@ -29,3 +29,7 @@ jobs:
       run: |
         conda install pytest
         $CONDA/bin/pytest
+    - name: Install requirements and Run Server
+      run: |
+        conda install -r requirements.txt
+        python manage.py runserver
